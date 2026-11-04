@@ -1,0 +1,17 @@
+<template>
+<style>
+    #root { font-family: 'Inter', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; }
+    .title { font-size: 2rem; color: white; }
+</style>
+<div id="root">
+    <div class="title">TESTING RENDER</div>
+</div>
+<script>
+    (function() {
+        const tl = gsap.timeline();
+        tl.to(".title", { opacity: 1, duration: 1 });
+        tl.to(".title", { opacity: 0, duration: 1 }, "-=0.5");
+        window.__timelines["shot1"] = tl;
+    })();
+</script>
+</template>

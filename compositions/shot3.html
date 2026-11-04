@@ -1,0 +1,17 @@
+<template>
+<style>
+    #root { font-family: 'Inter', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; }
+    .text { font-size: 2.5rem; font-weight: 800; color: #E31937; text-transform: uppercase; }
+</style>
+<div id="root">
+    <div class="text">The Roadster Flip</div>
+</div>
+<script>
+    (function() {
+        const tl = gsap.timeline();
+        tl.fromTo(".text", { rotation: -15, scale: 0.5, opacity: 0 }, { rotation: 0, scale: 1, opacity: 1, duration: 2, ease: "back.out(1.7)" });
+        tl.to(".text", { x: 100, opacity: 0, duration: 2 });
+        window.__timelines["shot3"] = tl;
+    })();
+</script>
+</template>

@@ -1,0 +1,18 @@
+<template>
+<style>
+    #root { font-family: 'JetBrains Mono', monospace; display: flex; justify-content: center; align-items: center; height: 100vh; text-align: center; }
+    .text { font-size: 2rem; color: #A0A0A0; border: 1px solid #A0A0A0; padding: 20px; }
+</style>
+<div id="root">
+    <div class="text">SPACE X<br>PROPULSION TECH</div>
+</div>
+<script>
+    (function() {
+        const tl = gsap.timeline();
+        tl.fromTo(".text", { opacity: 0, scale: 0.9 }, { opacity: 1, scale: 1, duration: 1 });
+        tl.to(".text", { borderColor: "#E31937", color: "#E31937", duration: 1, repeat: 1, yoyo: true });
+        tl.to(".text", { opacity: 0, duration: 1 });
+        window.__timelines["shot4"] = tl;
+    })();
+</script>
+</template>

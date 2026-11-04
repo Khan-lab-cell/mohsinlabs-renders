@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "historyId": "55720f3e-677f-4610-a24c-f25986b4f17f",
+  "currentRevision": "ce3f3a43-a2f8-48f2-9331-700fdeedd570",
+  "pendingChanges": false,
+  "files": {
+    "assets/voiceover.ogg": {
+      "hash": "1dcbfa46be4c22ee2a1311eeff43e706996e67af809f5cb45071d018051797c4",
+      "content": "/home/ubuntu/.cache/hyperframes/history/55720f3e-677f-4610-a24c-f25986b4f17f/blobs/1d/1dcbfa46be4c22ee2a1311eeff43e706996e67af809f5cb45071d018051797c4"
+    },
+    "compositions/shot1.html": {
+      "hash": "f25518231e6c045f64c9b64661382b86b6eb4dffaddb1ba65e3f9bcc00c38d4f",
+      "content": "/home/ubuntu/.cache/hyperframes/history/55720f3e-677f-4610-a24c-f25986b4f17f/blobs/f2/f25518231e6c045f64c9b64661382b86b6eb4dffaddb1ba65e3f9bcc00c38d4f"
+    },
+    "compositions/shot2.html": {
+      "hash": "63a7a2bd8f7bffab7baaeb8f653cb8da6135515c02e087606ade711e522ab95a",
+      "content": "/home/ubuntu/.cache/hyperframes/history/55720f3e-677f-4610-a24c-f25986b4f17f/blobs/63/63a7a2bd8f7bffab7baaeb8f653cb8da6135515c02e087606ade711e522ab95a"
+    },
+    "compositions/shot3.html": {
+      "hash": "f25bf257d88225a5c6226868d19c5b4593483fb58a0082c0aa20b6d449aa9627",
+      "content": "/home/ubuntu/.cache/hyperframes/history/55720f3e-677f-4610-a24c-f25986b4f17f/blobs/f2/f25bf257d88225a5c6226868d19c5b4593483fb58a0082c0aa20b6d449aa9627"
+    },
+    "compositions/shot4.html": {
+      "hash": "e4368f70853b75be421f8ee31ebee5446639c9e4969bc80433dafceb0b35c5e2",
+      "content": "/home/ubuntu/.cache/hyperframes/history/55720f3e-677f-4610-a24c-f25986b4f17f/blobs/e4/e4368f70853b75be421f8ee31ebee5446639c9e4969bc80433dafceb0b35c5e2"
+    },
+    "compositions/shot5.html": {
+      "hash": "06076b4fd4e8229902bfad205c96295d278e0b785eaddc5e05e1331190c58ffa",
+      "content": "/home/ubuntu/.cache/hyperframes/history/55720f3e-677f-4610-a24c-f25986b4f17f/blobs/06/06076b4fd4e8229902bfad205c96295d278e0b785eaddc5e05e1331190c58ffa"
+    },
+    "compositions/shot6.html": {
+      "hash": "80ac43304be107438e4de7bb057f401aa1bc588bf4942e392841c02e91b5da6c",
+      "content": "/home/ubuntu/.cache/hyperframes/history/55720f3e-677f-4610-a24c-f25986b4f17f/blobs/80/80ac43304be107438e4de7bb057f401aa1bc588bf4942e392841c02e91b5da6c"
+    },
+    "index.html": {
+      "hash": "6712ac70bb7a03a2a1247264cf6b36fe31ba33dffa36e12c133abc18c7f9d6ef",
+      "content": "/home/ubuntu/.cache/hyperframes/history/55720f3e-677f-4610-a24c-f25986b4f17f/blobs/67/6712ac70bb7a03a2a1247264cf6b36fe31ba33dffa36e12c133abc18c7f9d6ef"
+    }
+  },
+  "revisions": {
+    "ce3f3a43-a2f8-48f2-9331-700fdeedd570": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793790221283,
+      "endedAt": 1793790221284,
+      "files": {
+        "index.html": {
+          "before": "/home/ubuntu/.cache/hyperframes/history/55720f3e-677f-4610-a24c-f25986b4f17f/blobs/ee/eec8680330c2f6b93e30409be69caeb758e6f974c76937a947547494ef58bc2e",
+          "after": "/home/ubuntu/.cache/hyperframes/history/55720f3e-677f-4610-a24c-f25986b4f17f/blobs/67/6712ac70bb7a03a2a1247264cf6b36fe31ba33dffa36e12c133abc18c7f9d6ef"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "snapshots": {
+    "latest": null,
+    "revisions": {},
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "662780e8-aa9c-4a8e-a79b-93028e081af9",
+      "completedAt": 1793790254348,
+      "output": "/home/ubuntu/videos/roadster-render/test.mp4",
+      "status": "completed",
+      "revision": "ce3f3a43-a2f8-48f2-9331-700fdeedd570"
+    },
+    "retainedRevisions": [
+      "ce3f3a43-a2f8-48f2-9331-700fdeedd570"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}
