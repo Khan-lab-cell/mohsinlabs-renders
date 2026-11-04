@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roadster Full Render</title>
+    <title>Roadster Single Shot</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <style>
         body { margin: 0; background: #000; overflow: hidden; color: white; font-family: 'Inter', sans-serif; }
         #root { width: 100vw; height: 100vh; position: relative; }
-        .scene-host { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; }
+        .scene-host { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 1; }
     </style>
 </head>
 <body data-duration="5">
     <div id="root" data-duration="5">
-        <div id="shot3" class="scene-host" data-composition-id="shot3" data-duration="5"></div>
+        <div id="shot3" class="scene-host" data-composition-id="shot3" data-duration="5">
+             <div class="text" style="font-size: 2.5rem; font-weight: 800; color: #E31937; text-transform: uppercase; text-align: center; margin-top: 400px;">The Roadster Flip</div>
+        </div>
     </div>
     <script>
         window.__timelines = {};
         const tl = gsap.timeline();
-        // Fake a tiny animation to trigger FrameCapture
-        tl.to(".scene-host", { opacity: 1, duration: 0.1 });
+        // Explicitly animate the text so duration is detected
+        tl.fromTo(".text", { opacity: 0, scale: 0.5, rotation: -15 }, { opacity: 1, scale: 1, rotation: 0, duration: 2, ease: "back.out(1.7)" });
+        tl.to(".text", { opacity: 0, duration: 2 }, "-=0.5");
         window.__timelines['main'] = tl;
     </script>
 </body>
