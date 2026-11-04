@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roadster Shot 3</title>
+    <title>Roadster Full Render</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <style>
         body { margin: 0; background: #000; overflow: hidden; color: white; font-family: 'Inter', sans-serif; }
         #root { width: 100vw; height: 100vh; position: relative; }
-        .scene-host { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 1; }
+        .scene-host { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; }
     </style>
 </head>
 <body data-duration="5">
@@ -17,6 +17,10 @@
     </div>
     <script>
         window.__timelines = {};
+        const tl = gsap.timeline();
+        // Fake a tiny animation to trigger FrameCapture
+        tl.to(".scene-host", { opacity: 1, duration: 0.1 });
+        window.__timelines['main'] = tl;
     </script>
 </body>
 </html>
