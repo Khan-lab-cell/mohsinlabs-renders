@@ -22,6 +22,15 @@
     </div>
     <script>
         window.__timelines = {};
+        const tl = gsap.timeline();
+        for(let i=1; i<=6; i++) {
+            const shot = document.getElementById('shot' + i);
+            if (shot) {
+                tl.to(shot, { opacity: 1, duration: 0.5 }, (i-1)*5);
+                tl.to(shot, { opacity: 0, duration: 0.5 }, (i*5) - 0.5);
+            }
+        }
+        window.__timelines['main'] = tl;
     </script>
 </body>
 </html>
